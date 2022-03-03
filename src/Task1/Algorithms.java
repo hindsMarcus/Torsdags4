@@ -2,28 +2,29 @@ package Task1;
 
 public class Algorithms {
 
+    //public static int arr[] = {8, 9, 1, 5, 11, 13, 7, 4, 6, 3, 12, 10, 2};
+
     public static void main(String args[]) {
 
-        int arr[] = {8, 9, 1, 5, 11, 13, 7, 4, 6, 3, 12, 10, 2};
+        int[] arr = {8, 9, 1, 5, 11, 13, 7, 4, 6, 3, 12, 10, 2};
 
-        System.out.println("Original array: " + sortArrays(arr));
-
-        arr = sortArrays(arr);
-
-        System.out.println("Sorted array: " + sortArrays(arr));
+        sortArray(arr);
     }
 
-    public static int[] sortArrays(int[] arr) {
-        int length = arr.length;
+    public static void sortArray(int[] arr) {
 
-        for(int i = 0; i < length-1; i++) {
-            if(arr[i] > arr[i + 1]) {
-                int temp = arr[i];
-                arr[i] = arr[i + 1];
-                arr[i + 1] = temp;
-                i = -1;
+        for(int i = 0; i < arr.length; i++) {
+            for(int j = i+1; j < arr.length; j++) {
+                if (arr[i] > arr[j]) {
+                    int temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
             }
         }
-        return arr;
+        for(int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
     }
 }
+
