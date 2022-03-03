@@ -2,6 +2,8 @@ package Task1;
 
 public class Algorithms {
 
+    // Har måske lavet opgaven lidt anderledes ift. beskrivelsen, men det virker, så håber det går :)
+
     // static int arr[] = {8, 9, 1, 5, 11, 13, 7, 4, 6, 3, 12, 10, 2};
 
     public static void main(String args[]) {
