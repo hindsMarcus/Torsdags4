@@ -2,7 +2,7 @@ package Task1;
 
 public class Algorithms {
 
-    //public static int arr[] = {8, 9, 1, 5, 11, 13, 7, 4, 6, 3, 12, 10, 2};
+    // static int arr[] = {8, 9, 1, 5, 11, 13, 7, 4, 6, 3, 12, 10, 2};
 
     public static void main(String args[]) {
 
